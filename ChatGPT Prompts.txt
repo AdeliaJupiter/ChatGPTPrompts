@@ -1,0 +1,33 @@
+What is a class in JavaScript?
+
+In JavaScript, a class is a blueprint for creating objects with similar properties and methods. It provides a way to define a type of object and its behavior. JavaScript introduced the concept of classes in ECMAScript 2015 (ES6), although under the hood, JavaScript still uses prototypal inheritance.
+
+Here's a basic example of a class in JavaScript:
+
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+
+  // Method to calculate area
+  calculateArea() {
+    return this.width * this.height;
+  }
+}
+
+// Creating an instance of the Rectangle class
+const myRectangle = new Rectangle(5, 10);
+
+// Accessing properties and calling methods
+console.log("Width:", myRectangle.width); // Output: 5
+console.log("Height:", myRectangle.height); // Output: 10
+console.log("Area:", myRectangle.calculateArea()); // Output: 50
+
+
+In this example:
+
+Rectangle is a class with a constructor method that initializes the width and height properties of a rectangle object.
+calculateArea() is a method of the Rectangle class that calculates the area of the rectangle.
+myRectangle is an instance of the Rectangle class created using the new keyword.
+Classes provide a cleaner syntax for defining object types and their behavior in JavaScript, making it easier to work with object-oriented programming paradigms. However, it's important to understand that JavaScript's class syntax is primarily syntactic sugar over JavaScript's existing prototype-based inheritance system.
